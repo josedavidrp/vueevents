@@ -10,18 +10,18 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'My Awesome App',
-        short_name: 'MyApp',
-        description: 'My Awesome App description',
+        name: 'Mi super app',
+        short_name: 'Mi app',
+        description: 'Descripcion',
         theme_color: '#ffffff',
         icons: [
           {
-            src: '/img/icons/android-chrome-192x192.png',
+            src: '/img/icons/192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '/img/icons/android-chrome-512x512.png',
+            src: '/img/icons/512.png',
             sizes: '512x512',
             type: 'image/png'
           }
