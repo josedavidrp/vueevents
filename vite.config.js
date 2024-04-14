@@ -5,16 +5,16 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
-  const env = loadEnv(mode, process.cwd(), '');
+  const env = loadEnv(mode, process.cwd(), '')
   return {
     define: {
-      'process.env.SOME_KEY': JSON.stringify(env.SOME_KEY)
+      'process.env.SOME_KEY': JSON.stringify(env.SOME_KEY),
     },
     resolve: {
-          alias: {
-            '@': fileURLToPath(new URL('./src', import.meta.url))
-          }
-        },
+      alias: {
+        '@': fileURLToPath(new URL('./src', import.meta.url)),
+      },
+    },
     plugins: [vue()],
   }
 })
